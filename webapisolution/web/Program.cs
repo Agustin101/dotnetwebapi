@@ -15,7 +15,7 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging() || app.Enviro
   app.UseSwaggerUI(c =>
   {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1");
-    c.RoutePrefix = string.Empty; // Makes Swagger UI available at the root URL
+    c.RoutePrefix = "swagger"; // Adjust if needed
   });
 }
 
